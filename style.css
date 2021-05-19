@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 20%, 120%;
+    background-repeat: no-repeat;
+    background-image: url(./imagens/log.png) ,url(./imagens/jungle.jpg);
+    background-position:left, center;
+}
+img{
+    display: none;
+    max-width: 50px;
+}
+canvas{
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 100px;
+    animation-name: load;
+    animation-duration: 600ms;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+    
+}
+h1{
+    justify-content: center;
+    color: rgb(44, 44, 44);
+    background-image: url('./imagens/wood.png');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    padding-right: 43px;
+    padding-left: 48px;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 1;
+}
+p{
+    display: grid;
+    margin-right: auto;
+    margin-left: 45px;
+    padding: 10px;
+    background: rgb(255, 212, 133);
+    color: black;
+    border: 1px solid black;
+    margin-top: 180px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#points_text{
+    position: relative;
+    margin-right: 87%;
+    margin-top: 150px;
+    padding: 10px;
+    background-color: rgb(255, 212, 133);
+    border: 1px solid black;
+    z-index: 2;
+}
+
+#points{
+    margin-right: 87%;
+    margin-top: 10px;
+    font-size: 60px;
+    color:rgb(214, 214, 214);
+    z-index: 2;
+}
+
+#Titulo.animar{
+    animation-name: moove;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes moove {
+    to{
+        transform: translateY(300px);
+    }
+}
+
+@keyframes load {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,275 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    --text-primary: #23232e ;
+    --text-secondary: #141418 ;
+    --bg-primary: #8b7fb6;
+    --bg-secondary:#ececec;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+body::-webkit-slider-thumb{
+    background: #6649b8;
+}
+
+main{
+    margin-left: 4.9rem;
+    padding-top: 1px;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: 200ms ease;
+    z-index: 1;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-item{
+    width: 100%;
+}
+
+.navbar-item:last-child{
+    margin-top: 15rem;
+}
+
+.navbar-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 200ms ease;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar-link img{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo img{
+    transform: rotate(0deg);
+    transition: transform 200ms ease;
+}
+
+.navbar:hover .logo img{
+    transform: rotate(90deg);
+
+}
+
+#logo-home{
+    display: grid;
+    width: 40rem;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+
+.legenda {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.article-01{
+    display: flexbox;
+    width: 100%;
+
+}
+
+.article-01 img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+
+}
+
+.article-02 img{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    padding: 15px;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctx{
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+
+.serv-p{
+    
+    padding: 20px;
+    border: 2px solid black;
+    margin: 8px;
+
+}
+
+#lista{
+    padding: 20px;
+    margin: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#lista h2 {
+    color: #141418;
+}
+
+#lista a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+#lista ul li {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#lista ul li a:hover{
+    position: relative;
+    color: var(--bg-primary);
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#lista img{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#sobre-p img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    object-fit: cover;
+}
+
+#sobre-p iframe{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+footer {
+    padding: 14px 0;
+    background-color: var(--bg-primary);
+    color: #FFF;
+    text-align: center;
+  }
+  
+  footer img {
+    height: 100px;
+    margin: 10px 0;
+  }
+  
+  footer p {
+    margin-top: 25px;
+  }
+  
+  footer form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer input, footer textarea {
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+  }
+  
+  footer .detail {
+    font-weight: bold;
+  }
